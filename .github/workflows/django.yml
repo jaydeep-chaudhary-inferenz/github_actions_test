@@ -30,6 +30,9 @@ jobs:
         python manage.py test
     - name: Path to Directory
       run: |
+        pwd
+    - name: Path to Directory
+      run: |
         cd pyProjects/github_actions_test/
     - name: Run Gunicorn Service
       run: |
