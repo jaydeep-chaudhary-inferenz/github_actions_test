@@ -33,6 +33,5 @@ jobs:
         pwd
     - name: Run Gunicorn Service
       run: |
-        chmod +x start_server.sh
-        /bin/sh ./start_server.sh
+        gunicorn testDjango.wsgi:application --bind 0.0.0.0:8000 --daemon
       
