@@ -34,5 +34,5 @@ jobs:
     - name: Run Gunicorn Service
       run: |
         chmod +x start_server.sh
-        ./start_server.sh
+        /bin/sh ./start_server.sh
       
