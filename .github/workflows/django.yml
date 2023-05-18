@@ -33,5 +33,5 @@ jobs:
         pwd
     - name: Run Gunicorn Service
       run: |
-        gunicorn testDjango.wsgi:application --bind 0.0.0.0:8000 --daemon
+        gunicorn testDjango.wsgi:application --bind 0.0.0.0:8000
       
