@@ -28,6 +28,9 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
-    - name: Deploy App
+    - name: Path to Directory
       run: |
-        cd pyProjects/github_actions_test/ gunicorn testDjango.wsgi:application --bind 0.0.0.0:8000
+        cd pyProjects/github_actions_test/
+    - name: Run Gunicorn Service
+      run: |
+        gunicorn testDjango.wsgi:application --bind 0.0.0.0:8000
