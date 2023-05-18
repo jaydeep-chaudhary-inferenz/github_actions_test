@@ -31,9 +31,6 @@ jobs:
     - name: Path to Directory
       run: |
         pwd
-    - name: Path to Directory
-      run: |
-        cd pyProjects/github_actions_test/
     - name: Run Gunicorn Service
       run: |
         gunicorn testDjango.wsgi:application --bind 0.0.0.0:8000
