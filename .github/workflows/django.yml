@@ -31,7 +31,7 @@ jobs:
     - name: Path to Directory
       run: |
         pwd
-    - name: Run Gunicorn Service
+    - name: Run Gunicorn 
       run: |
         gunicorn testDjango.wsgi:application --bind 0.0.0.0:8000
       
